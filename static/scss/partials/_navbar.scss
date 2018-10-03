@@ -1,0 +1,55 @@
+@import 'color';
+@import 'fonts';
+
+.topnav {
+    /*overflow: hidden;*/
+    background-color: $grey;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    width:97%;
+    z-index:300;
+    
+    a {
+      font-family: 'Karla', sans-serif;
+        float: right;
+        font-size:1.4rem;
+        display: block; 
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        font-weight: 700; 
+      }
+      a:first-child{
+        font-family: $main_font;
+        font-weight:700;
+        font-size:2rem;
+      }
+      .active {
+        float: left;
+        color:$white;
+      }
+      .icon {
+        display: none;
+      }
+  }
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .topnav {
+        a:not(:first-child) {display: none;}
+        a.icon {
+            float: right;
+            display: block;
+          }
+    }
+  } 
+  
+  
+ 

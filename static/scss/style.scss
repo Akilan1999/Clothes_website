@@ -1,4 +1,50 @@
+
+@import 'partials/fonts';
+@import 'partials/color';
 @import 'partials/navbar';
+@import 'partials/slider';
+@import 'partials/card';
+@import 'partials/layout';
 
-$color:black;
+@import 'index.scss';
 
+
+
+
+
+body{
+    background: #F5F5F5;
+}
+
+h1{
+    font-family: $main_font;
+    font-size: 2rem;
+}
+
+h4{
+    font-family: $main_font;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+}
+
+button{
+        font-family: $main_font;
+        background-color:$grey; /* Green */
+        cursor:pointer;
+        border: none;
+        color: $white;
+        padding: 15px 32px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.5rem;
+        border-radius: 0.2rem;
+}
+button:hover{
+    transition: background-color 0.2s ease;
+    background-color: $orange;
+}

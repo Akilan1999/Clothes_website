@@ -1,0 +1,32 @@
+@import 'partials/slider';
+
+#home_slider{
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    img {
+        vertical-align: middle;
+    }
+
+}
+
+#best_offers{
+    margin: 3rem;
+    h1{
+        text-align: left;
+    }
+    span{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .prev_cost{
+       color:$red;
+       font-family: $main_font;
+    }
+    .current_cost{ 
+      color:$green;
+      font-family: $main_font;
+      font-size:2rem;
+    }
+    } 
+
+

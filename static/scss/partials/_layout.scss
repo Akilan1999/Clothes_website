@@ -1,0 +1,18 @@
+.card-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 10px;
+        .card-item {
+            padding: 2px;
+            text-align: center;
+          }
+        
+          
+}
+
+@media screen and (max-width: 600px) {
+    .card-container{
+     grid-template-columns: auto;
+     padding: 0px;
+    }
+ }

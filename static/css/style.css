@@ -1,3 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+.topnav {
+  /*overflow: hidden;*/
+  background-color: #535151;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  position: fixed;
+  top: 0;
+  left: 1%;
+  width: 97%;
+  z-index: 300;
+}
+.topnav a {
+  font-family: "Karla", sans-serif;
+  float: right;
+  font-size: 1.4rem;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  font-weight: 700;
+}
+.topnav a:first-child {
+  font-family: "Passero One", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.topnav .active {
+  float: left;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+  box-shadow: 0 4px 10px -2px #aaaaaa;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+}
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 85%;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  padding: 2px 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.card-container .card-item {
+  padding: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: auto;
+    padding: 0px;
+  }
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 5rem;
+  box-shadow: 0 4px 10px -2px #aaaaaa;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+}
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#home_slider {
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+}
+#home_slider img {
+  vertical-align: middle;
+}
+
+#best_offers {
+  margin: 3rem;
+}
+#best_offers h1 {
+  text-align: left;
+}
+#best_offers span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+#best_offers .prev_cost {
+  color: red;
+  font-family: "Passero One", cursive;
+}
+#best_offers .current_cost {
+  color: #39b413;
+  font-family: "Passero One", cursive;
+  font-size: 2rem;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+h1 {
+  font-family: "Passero One", cursive;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: "Passero One", cursive;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+}
+
+button {
+  font-family: "Passero One", cursive;
+  background-color: #535151;
+  /* Green */
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+button:hover {
+  transition: background-color 0.2s ease;
+  background-color: darkorange;
+}
 
 /*# sourceMappingURL=style.css.map */
