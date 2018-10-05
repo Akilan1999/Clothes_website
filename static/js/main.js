@@ -9,6 +9,15 @@ function hamburger() {
 
 
 /*----------------Slider-------------------*/
+var current_slide = 0;
+
+function modal_click(){
+    current_slide = 1;
+}
+
+function modal_click_exit(){
+    current_slide = 0;
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -23,6 +32,9 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  if(current_slide ===1 ){
+  var slides = document.getElementsByClassName("mySlides_product");
+  }
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}

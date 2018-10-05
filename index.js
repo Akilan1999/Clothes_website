@@ -11,6 +11,10 @@ app.get('/', (req,res) => {
     res.render('pages/index');
   });
 
+  app.get('/search', (req,res) => {
+    res.render('pages/search_result');
+  });
+
   // PORT
 const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`listensing ${port}`));

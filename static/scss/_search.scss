@@ -1,21 +1,19 @@
-.card-container{
+#search_result{
+    margin-top:8rem;
+    .card-container{
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
         padding: 10px;
         .card-item {
             padding: 2px;
             text-align: center;
-          }
-        
-          
+          }         
 }
-
-.search-container{
-    display: grid;
-    grid-template-columns: 20% 80%;
 }
 
 @media screen and (max-width: 600px) {
+    #search_result{
+        margin-top:1rem;
     .card-container{
      grid-template-columns: auto;
      padding: 0px;
@@ -23,4 +21,5 @@
     .search-container{
         grid-template-columns: auto;
     }
- }
+}
+ } 
