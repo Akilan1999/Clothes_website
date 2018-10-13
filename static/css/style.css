@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
 @import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+#search {
+  display: inline;
+  margin: 2rem;
+  margin-top: 5rem;
+}
+#search input {
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#search input:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#search button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .topnav {
   /*overflow: hidden;*/
   background-color: #535151;
@@ -46,81 +73,47 @@
     display: block;
   }
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  margin-top: 5rem;
-  box-shadow: 0 4px 10px -2px #aaaaaa;
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Caption text */
-  /* Number text (1/3 etc) */
-}
-.slideshow-container .prev, .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.slideshow-container .prev:hover, .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slideshow-container .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+/*---------------- Range Slider ----------------------*/
+.slidecontainer {
+  margin-top: 1rem;
   width: 100%;
-  text-align: center;
-}
-.slideshow-container .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #535151;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.slider:hover {
+  opacity: 1;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: black;
+  cursor: pointer;
 }
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: black;
+  cursor: pointer;
+}
+
+/* Slideshow container */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -177,91 +170,62 @@
     grid-template-columns: auto;
   }
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  margin-top: 5rem;
-  box-shadow: 0 4px 10px -2px #aaaaaa;
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Caption text */
-  /* Number text (1/3 etc) */
-}
-.slideshow-container .prev, .slideshow-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.slideshow-container .prev:hover, .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.slideshow-container .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+/*---------------- Range Slider ----------------------*/
+.slidecontainer {
+  margin-top: 1rem;
   width: 100%;
-  text-align: center;
-}
-.slideshow-container .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #535151;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.slider:hover {
+  opacity: 1;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: black;
+  cursor: pointer;
 }
-#home_slider {
-  margin-bottom: 3rem;
-  box-sizing: border-box;
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: black;
+  cursor: pointer;
 }
-#home_slider img {
-  vertical-align: middle;
+
+/* Slideshow container */
+#home {
+  margin: 1rem;
+  margin-top: 5rem;
+  background: url("https://storage.tarafdari.com/contents/user240772/news/asics_big_world_go_run_it_steps.jpg");
+  /* Full height */
+  height: 70vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #best_offers {
   margin: 3rem;
+  margin-top: 1rem;
 }
 #best_offers h1 {
   text-align: left;
@@ -280,6 +244,16 @@
   font-size: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  #home {
+    background: url("http://img.auctiva.com/imgdata/1/4/1/2/5/8/6/webimg/891674172_o.jpg");
+    height: 70vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 #search_result {
   margin-top: 8rem;
 }
@@ -291,6 +265,17 @@
 #search_result .card-container .card-item {
   padding: 2px;
   text-align: center;
+}
+#search_result h4 .content-narrow h4 {
+  margin-bottom: 1rem;
+}
+
+#cost_min {
+  font-size: 2rem;
+}
+
+#cost_max {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -305,6 +290,33 @@
     grid-template-columns: auto;
   }
 }
+#desktop_cart {
+  margin: 3rem;
+}
+#desktop_cart table {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#desktop_cart table img {
+  height: 7rem;
+  width: 7rem;
+}
+#desktop_cart table .icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+#desktop_cart table .icon:hover {
+  transition: 0.3s;
+  color: red;
+}
+#desktop_cart table th {
+  font-family: "Passero One", cursive;
+  font-size: 1.5rem;
+}
+#desktop_cart table td {
+  font-family: "Karla", sans-serif;
+}
+
 body {
   background: #F5F5F5;
 }
@@ -342,6 +354,82 @@ button {
 button:hover {
   transition: background-color 0.2s ease;
   background-color: darkorange;
+}
+
+/*------------------------ Table ------------------------------*/
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+/*----------------------- Fancy CheckBox/Radio Button ------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #39b413;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+input[type=radio] + label::before {
+  border-radius: 18px;
+}
+
+/* Checked */
+input[type=checkbox]:checked + label,
+input[type=radio]:checked + label {
+  padding-left: 10px;
+  color: white;
+}
+
+input[type=checkbox]:checked + label::before,
+input[type=radio]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #39b413;
+}
+
+/* Transition */
+label,
+label::before {
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
 }
 
 /*# sourceMappingURL=style.css.map */

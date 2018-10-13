@@ -2,78 +2,99 @@
 <% include ../partials/navbar %>
 <div class="search-container">
     <div class="">
-            <div class="card card-item content-narrow">
-                    <div class="card-text">
-                        <h4>Narrow search</h4>
-                    </div>
-                    </div>
-                        
-    </div>
-<section id="search_result">
-    <h1>Best <span style="font-size:3rem; color:darkorange">Current</span> Offers</h1>
-    <div class="card-container">
-        <div class="card card-item">
-            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                style="width:100%">
+        <div class="card card-item content-narrow">
             <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button onclick="location.href='#popup'; modal_click()">View more</button>
+                <h4>Category</h4>
+                <!---<h2>Radio Buttons</h2>
+                <input type="radio" name="rb" id="rb1" />
+                <label for="rb1">Check this</label>
+                <input type="radio" name="rb" id="rb2" />
+                <label for="rb2">... or this...</label>
+                <input type="radio" name="rb" id="rb3" />
+                <label for="rb3">or maybe this</label>-->
+                <input type="checkbox" name="cb" id="T-shirt" />
+                <label for="T-shirt"> T-Shirts</label>
+                <input type="checkbox" name="cb" id="Shoes" />
+                <label for="Shoes"> Shoes</label>
+                <input type="checkbox" name="cb" id="Pants" />
+                <label for="Pants"> Pants</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange_min">
+                    <p>Min Cost: <span id="cost_min"></span></p>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange_max">
+                    <p>Max Cost: <span id="cost_max"></span></p>
+                </div>
+                <button onclick="location.href='#popup'; modal_click()">Narrow search</button>
             </div>
         </div>
 
-        <div class="card card-item">
-            <img src="https://target.scene7.com/is/image/Target/GUEST_cd1e4c49-1858-46f2-9bae-7061a774e904?wid=488&hei=488&fmt=pjpeg"
-                alt="Avatar" style="width:100%">
-            <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button>View more</button>
-            </div>
-        </div>
-        <div class="card card-item">
-            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                style="width:100%">
-            <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button>View more</button>
-            </div>
-        </div>
-        <div class="card card-item">
-            <img src="https://www.jcrew.com/s7-img-facade/J8493_EG8807?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408"
-                alt="Avatar" style="width:100%">
-            <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button>View more</button>
-            </div>
-        </div>
-        <div class="card card-item">
-            <img src="http://kickitonline.com/wp-content/uploads/2018/03/adidasoriginalscampus._CB1512587610_.jpg" alt="Avatar"
-                style="width:100%">
-            <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button>View more</button>
-            </div>
-        </div>
-        <div class="card card-item">
-            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
-                style="width:100%">
-            <div class="card-text">
-                <h4>Sniker 3.0</h4>
-                <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
-                <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
-                <button>View more</button>
-            </div>
-        </div>
     </div>
-</section>
+    <section id="search_result">
+            <% include ../partials/search %>
+        <h1>Best <span style="font-size:3rem; color:darkorange">Current</span> Offers</h1>
+        <div class="card-container">
+            <div class="card card-item">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
+                    style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button onclick="location.href='#popup'; modal_click()">View more</button>
+                </div>
+            </div>
+
+            <div class="card card-item">
+                <img src="https://target.scene7.com/is/image/Target/GUEST_cd1e4c49-1858-46f2-9bae-7061a774e904?wid=488&hei=488&fmt=pjpeg"
+                    alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button>View more</button>
+                </div>
+            </div>
+            <div class="card card-item">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
+                    style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button>View more</button>
+                </div>
+            </div>
+            <div class="card card-item">
+                <img src="https://www.jcrew.com/s7-img-facade/J8493_EG8807?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=408&hei=408"
+                    alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button>View more</button>
+                </div>
+            </div>
+            <div class="card card-item">
+                <img src="http://kickitonline.com/wp-content/uploads/2018/03/adidasoriginalscampus._CB1512587610_.jpg"
+                    alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button>View more</button>
+                </div>
+            </div>
+            <div class="card card-item">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" alt="Avatar"
+                    style="width:100%">
+                <div class="card-text">
+                    <h4>Sniker 3.0</h4>
+                    <p><span>Previous cost:</span><span class="prev_cost"> $800</span></p>
+                    <p><span>Current cost:</span><span class="current_cost"> $200</span></p>
+                    <button>View more</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 <% include ../partials/footer %>

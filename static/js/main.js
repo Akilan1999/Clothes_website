@@ -7,7 +7,22 @@ function hamburger() {
     }
 }
 
+/*---------------------- Slider Range ---------------------*/
+var slider_min = document.getElementById("myRange_min");
+var slider_max = document.getElementById("myRange_max");
+var output_min = document.getElementById("cost_min");
+var output_max = document.getElementById("cost_max");
+output_min.innerHTML = slider_min.value;
+output_max.innerHTML = slider_max.value;
 
+slider_min.oninput = function() {
+  output_min.innerHTML = this.value;
+}
+slider_max.oninput = function() {
+    output_max.innerHTML = this.value;
+  }
+
+  
 /*----------------Slider-------------------*/
 var current_slide = 0;
 
@@ -29,6 +44,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -44,6 +60,8 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = " block";  
   dots[slideIndex-1].className += " active";
 }
+
+

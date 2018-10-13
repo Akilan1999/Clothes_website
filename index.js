@@ -14,6 +14,11 @@ app.get('/', (req,res) => {
   app.get('/search', (req,res) => {
     res.render('pages/search_result');
   });
+  app.get('/cart', (req,res) => {
+   
+    res.render('pages/cart');
+    
+  });
 
   // PORT
 const port = process.env.PORT || 3000

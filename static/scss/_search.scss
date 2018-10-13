@@ -9,6 +9,20 @@
             text-align: center;
           }         
 }
+h4{
+    .content-narrow{
+        h4{
+            margin-bottom: 1rem;
+        }
+    }
+}
+} 
+
+#cost_min{ 
+    font-size: 2rem; 
+}
+#cost_max{
+    font-size: 2rem; 
 }
 
 @media screen and (max-width: 600px) {
@@ -22,4 +36,4 @@
         grid-template-columns: auto;
     }
 }
- } 
+} 
