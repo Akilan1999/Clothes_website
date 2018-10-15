@@ -3,6 +3,8 @@
 
 #desktop_cart{
     margin: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     table{
        background: $white;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -17,15 +19,38 @@
        }
        .icon:hover{
         transition: 0.3s;
-           color:red;
+           color:$red;
        }
        th{
         font-family: $main_font;
-        font-size:1.5rem;
+        font-size:1.5rem;  
        }
 
        td{
            font-family: $para_font;
        }
+       .cost{
+           font-size:1.5rem;
+           color: $green;
+       }
+       button:hover{
+        background:$green;
+        transition: 0.3s; 
+       }
     }
-} 
+}
+
+#mobile_cart{
+    p{
+        font-size:1.3rem;
+    } 
+    .cost{
+        font-size:1.5rem;
+        color: $green;
+    }
+    .exit:hover{
+        background:$red;
+        transition: 0.3s; 
+       }
+    }
+  

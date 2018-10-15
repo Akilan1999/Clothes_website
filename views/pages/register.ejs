@@ -1,0 +1,30 @@
+<% include ../partials/head %>
+<% include ../partials/navbar %>
+<section id="login_register">
+    <div class="login-section">
+        <div class="login-section-image"></div>
+        <div class="login-section-form">
+            <div>
+                <h1>Register</h1>
+                <form action="" method="POST" id="login-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="password">
+                </form>
+                <div class="form-options">
+                    <button type="submit" class="" form="login-form">Register</button>
+                    <br>
+                    <a href="/login" class="">Login to exsisting account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<% include ../partials/footer %>

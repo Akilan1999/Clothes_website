@@ -11,6 +11,8 @@
 @import 'index.scss';
 @import 'search.scss';
 @import 'cart.scss';
+@import 'login.scss'; 
+@import 'brand_detail.scss'; 
 
 
 
@@ -19,7 +21,7 @@ body{
     background: #F5F5F5;
 }
 
-h1{
+h1{  
     font-family: $main_font;
     font-size: 2rem;
 }
@@ -32,7 +34,9 @@ h4{
 p{
     font-family: $para_font;
 }
-
+a {
+  text-decoration: none;
+}
 button{
         font-family: $main_font;
         background-color:$grey; /* Green */
@@ -50,6 +54,16 @@ button{
 button:hover{
     transition: background-color 0.2s ease;
     background-color: $orange;
+}
+
+input {
+  width: 90%;
+  background-color: #f5f4f2;
+  border: 1px solid #707070;
+  font-size: 1.5em;
+  padding: 2.5px;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 /*------------------------ Table ------------------------------*/
 

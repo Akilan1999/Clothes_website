@@ -1,0 +1,19 @@
+#brand_image{
+    margin:1rem;
+   /* Full height */
+   height: 70vh; 
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    #brand_image{
+        height: 70vh; 
+        /* Center and scale the image nicely */
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ } 

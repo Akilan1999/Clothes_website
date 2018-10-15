@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
 @import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
 @import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
+@import url("https://fonts.googleapis.com/css?family=Karla:400i|Passero+One");
 #search {
   display: inline;
   margin: 2rem;
@@ -81,7 +83,7 @@
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   height: 10px;
   border-radius: 5px;
   background: #535151;
@@ -119,6 +121,7 @@
   transition: 0.3s;
   width: 85%;
   margin-bottom: 1rem;
+  background: white;
 }
 
 .card:hover {
@@ -178,7 +181,7 @@
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 90%;
   height: 10px;
   border-radius: 5px;
   background: #535151;
@@ -292,6 +295,8 @@
 }
 #desktop_cart {
   margin: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 #desktop_cart table {
   background: white;
@@ -316,7 +321,141 @@
 #desktop_cart table td {
   font-family: "Karla", sans-serif;
 }
+#desktop_cart table .cost {
+  font-size: 1.5rem;
+  color: #39b413;
+}
+#desktop_cart table button:hover {
+  background: #39b413;
+  transition: 0.3s;
+}
 
+#mobile_cart p {
+  font-size: 1.3rem;
+}
+#mobile_cart .cost {
+  font-size: 1.5rem;
+  color: #39b413;
+}
+#mobile_cart .exit:hover {
+  background: red;
+  transition: 0.3s;
+}
+
+/* Login Form */
+#login_register label {
+  margin: 0;
+  font-size: 1.3rem;
+}
+#login_register label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: -1;
+  border-style: none;
+}
+#login_register .form-options {
+  margin-top: 2rem;
+}
+#login_register a {
+  font-family: "Karla", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #535151;
+}
+#login_register a:hover {
+  transition: 0.3s;
+  color: darkorange;
+}
+#login_register .login-section,
+#login_register .login-section-form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#login_register .login-section {
+  height: 100vh;
+}
+#login_register .login-section-image {
+  background-image: url(https://i.ytimg.com/vi/YY5QWEuZ3BQ/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+#login_register .login-section-form {
+  padding: 2em;
+  align-items: center;
+  border-left: 5px solid #535151;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 620px) {
+  #login_register .login-section {
+    grid-template-columns: 2fr 1fr;
+  }
+  #login_register .login-section-image {
+    display: block;
+  }
+  #login_register .login-section-form {
+    border-left: none;
+    border-top: 5px solid #4d384b;
+  }
+}
+#login_register .register-section p {
+  margin-bottom: 1em;
+}
+#login_register .register-section .plan-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+}
+#login_register .register-section .plan-cards .plan-card {
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-top: 5px solid #4d384b;
+  border-radius: 5px;
+  padding: 2em 3em;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; RIKESH! no such thing "space-evenly" */
+}
+#login_register .register-section .plan-cards .plan-card .plan-card-footer {
+  display: flex;
+  flex-direction: column;
+}
+#login_register .register-section .plan-cards .plan-card ul {
+  list-style: none;
+}
+@media only screen and (min-width: 620px) {
+  #login_register .register-section .plan-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#brand_image {
+  margin: 1rem;
+  /* Full height */
+  height: 70vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  #brand_image {
+    height: 70vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 body {
   background: #F5F5F5;
 }
@@ -333,6 +472,10 @@ h4 {
 
 p {
   font-family: "Karla", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -354,6 +497,16 @@ button {
 button:hover {
   transition: background-color 0.2s ease;
   background-color: darkorange;
+}
+
+input {
+  width: 90%;
+  background-color: #f5f4f2;
+  border: 1px solid #707070;
+  font-size: 1.5em;
+  padding: 2.5px;
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*------------------------ Table ------------------------------*/
